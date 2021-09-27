@@ -348,8 +348,8 @@ header {
 }
 #contact .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
-  background-attachment: fixed;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: initial;
 }
 .banner {
   min-height: 76vh;
