@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<title>FOLDER</title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- font-awesome -->
+  	<link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  	<!-- file styles -->
+  	<link rel="stylesheet" href="./src/css/styles.css" />
+</head>
+<body>
+
+	<!--- HEADER  --->
+	<header id="home">
+		<!-- navbar -->
+		<nav id="nav">
+			<!-- nav center -->
+			<div class="nav-center">
+				<!-- nav header -->
+				<div class="nav-header">
+					<img src="./assets/logos/logo.png" class="logo" alt="logo" />
+					<div class="name">
+						<h1>elfren danilo</h1>
+					</div>
+					<button class="nav-toggle">
+						<div class="toggle-bar"></div>
+					</button>
+				</div>
+				<!-- links -->
+				<div class="links-container">
+					<ul class="links">
+						<li><a href="#home" class="scroll-link">home</a></li>
+						<li><a href="#about" class="scroll-link">about</a></li>
+						<li><a href="#gallery" class="scroll-link">gallery</a></li>
+						<li><a href="#contact" class="scroll-link">contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- banner -->
+		<div class="banner">
+			<div class="container">
+				<img src="./assets/logos/img_central.png" alt="img_central">
+				<h1>graphic designer</h1>
+				<p>
+            		“Graphic design isn' t what you see, but what you should make other people see”
+            		<br/>(Edgar Degas)
+          		</p>
+          		<a href="./public/components/CV.pdf" class="btn btn-white" target="_Blank">
+            		resumen <i class="fas fa-file-download"></i></i>
+          		</a>
+			</div>
+		</div>
+		<!-- wave -->
+		<div class="wave" style="height: 120px; overflow: hidden;">
+			<svg  viewBox="0 0 500 150"preserveAspectRatio="none" style="height: 100%; width: 100%;">
+			<path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+          	style="stroke:none; fill: #f1f5f8;"></path></svg>
+      	</div>
+	</header>
+
+	<!--- MAIN  --->
+	<main>
+		<!-- About -->
+		<section id="about" class="section">
+			<div class="title">
+				<h2>about <span>me</span></h2>
+			</div>
+			<div class="internal-container">
+				<div class="circle1">
+					<img src="./assets/logos/CS6.png" alt="">
+				</div>
+				<div class="text">
+					<h3>Resumen...</h3>
+            		<p>
+              			Tras años de experiencia, he tomado la decisión de reorientar mi carrera profesional con el ánimo de continuar aprendiendo y, también, aportar toda mi experiencia adquirida. Considero que el cambio es un signo de capacidad de superación y, por ello, creo que siempre sería capaz de aportar valor a los trabajos de que realice para mis clientes.
+              			<br><br>
+
+              			Mi objetivo principal es desarrollarme profesionalmente y evolucionar en mi sector, de modo que busco oportunidades que me permitan hacerlo, al tiempo que trataré de alinearme completamente con los objetivos de los clientes.
+            		</p>
+				</div>
+				<div class="circle2">
+					<img src="./assets/logos/AdobeIlus.png" alt="">
+				</div>
+			</div>
+		</section>
+		<!-- Gallery -->
+		<section id="gallery" class="section">
+			<div class="title">
+          		<h2>my <span>gallery</span></h2>
+        	</div>
+        	<div class="internal-container">
+        		<!-- menu movil -->
+        		<div class="index-movil">
+        			<button class="more-button">
+              			<div class="menu-icon">
+               				<img id="canister" src="./assets/logos/botelleno.png" alt="botevacio">
+              			</div>
+            		</button>
+            		<ul class="more-button-list">
+            			<li class="link active lang more-button-list-item" data-name="all-designs" key="all">
+            				<span>All Designs</span>
+            			</li>
+             	 		<li class="link lang more-button-list-item" data-name="boxs-designs" key="box">
+             	 			<span>Boxs Designs</span>
+             	 		</li>
+              			<li class="link lang more-button-list-item" data-name="books-designs" key="book">
+              				<span>Books Designs</span>
+              			</li>
+              			<li class="link lang more-button-list-item" data-name="booklets-designs" key="bookle">
+              				<span>Booklet Designs</span>
+              			</li>
+              			<li class="link lang more-button-list-item" data-name="calendars-designs" key="calendar">
+              				<span>Calendar Designs</span>
+              			</li>
+              			<li class="link lang more-button-list-item" data-name="cards-designs" key="card">
+              				<span>Card Designs</span>
+              			</li>
+              			<li class="link lang more-button-list-item" data-name="labels-designs" key="label">
+              				<span>Label Designs</span>
+              			</li>
+              			<li class="link lang more-button-list-item" data-name="magazines-designs" key="magazine">
+              				<span>Magazine Designs</span>
+              			</li>
+              			<li class="link lang more-button-list-item" data-name="documents-designs" key="document">
+              				<span>Document Designs</span>
+              			</li>
+            		</ul>
+        		</div>
+        		<!-- Gallery -->
+          		<div class="gallery">
+            		
+          		</div>
+          		<!-- Menu Desk -->
+          		<div class="index-desk">
+            		
+          		</div>
+        	</div>
+		</section>
+		<!-- Contact -->
+		<section id="contact" class="section">
+        	<div class="title">
+          		<h2>contact <span>me</span></h2>
+        	</div>
+        	<div class="internal-container">
+        		<div class="social-movil">
+        			<div class="nav">
+        				<input type="checkbox" name="" id="" class="check">
+						<div class="openBtn">
+							<i class="fas fa-arrows-alt"></i>
+						</div>
+						<div class="options">
+							<div><a href=""><i class="fas fa-mobile"></i></a></div>
+							<div><a href=""><i class="fab fa-whatsapp-square"></i></a></div>
+							<div><a href=""><i class="fab fa-facebook-square"></i></a></div>
+							<div><a href=""><i class="fab fa-instagram-square"></i></a></div>
+							<div><a href=""><i class="fab fa-twitter-square"></i></a></div>
+						</div>
+        			</div>
+        		</div>
+          		<div class="massage">
+          			
+          		</div>
+          		<div class="social-desk">
+          			
+          		</div>
+        	</div>
+      	</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="section">
+      	<p>
+        	copyright &copy; personal graphic design company
+        	<span id="date"></span>. all rights reserved
+      	</p>
+    </footer>
+
+    <!-- Button Scroll -->
+    <a class="scroll-link top-link" href="#home">
+      	<i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- file javascript -->
+	<script src="./src/js/main.js"></script>
+</body>
+</html>
