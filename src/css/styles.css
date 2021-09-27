@@ -337,19 +337,19 @@ header {
   background-size: contain;
 }
 #about .internal-container {
-  background: url(../../assets/backgrounds_movil/bcgmovil-2.png);
-  background-repeat: no-repeat;
-  background-size: initial;
+  background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
+  background-attachment: fixed;
+  background-size: contain;
 }
 #gallery .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
-  background-repeat: no-repeat;
-  background-size: initial;
+  background-attachment: fixed;
+  background-size: contain;
 }
 #contact .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
-  background-repeat: no-repeat;
-  background-size: initial;
+  background-attachment: fixed;
+  background-size: contain;
 }
 .banner {
   min-height: 76vh;
