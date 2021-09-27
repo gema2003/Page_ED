@@ -917,4 +917,22 @@ footer p {
   .check:checked ~ .openBtn {
     transform: rotate(180deg);
   }
+  #about .internal-container {
+    background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  #gallery .internal-container {
+    background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  #contact .internal-container {
+    background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
