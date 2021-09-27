@@ -333,22 +333,22 @@ nav {
 
 header {
   min-height: 76vh;
-  background: url(/../../assets/backgrounds_movil/bcgmovil-1.jpg);
+  background: url(../../assets/backgrounds_movil/bcgmovil-1.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
 #about .internal-container {
-  background: url(/../../assets/backgrounds_movil/bcgmovil-2.png);
+  background: url(../../assets/backgrounds_movil/bcgmovil-2.png);
   background-attachment: fixed;
   background-size: cover;
 }
 #gallery .internal-container {
-  background: url(/../../assets/backgrounds_movil/bcgmovil-3.jpg);
+  background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
 #contact .internal-container {
-  background: url(/../../assets/backgrounds_movil/bcgmovil-4.jpg);
+  background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -626,22 +626,22 @@ div i {
 
 @media screen and (min-width:  800px) {
   header {
-    background: url(/../../assets/backgrounds_desk/backgroud1.jpg);
+    background: url(../../assets/backgrounds_desk/backgroud1.jpg);
     background-attachment: fixed;
     background-size: cover;
   }
   #about .internal-container {
-    background: url(/../../assets/backgrounds_desk/backgroud2.jpg);
+    background: url(../../assets/backgrounds_desk/backgroud2.jpg);
     background-attachment: fixed;
     background-size: cover;
   }
   #gallery .internal-container {
-    background: url(/../../assets/backgrounds_desk/backgroud3.jpg);
+    background: url(../../assets/backgrounds_desk/backgroud3.jpg);
     background-attachment: fixed;
     background-size: cover;
   }
   #contact .internal-container {
-    background: url(/../../assets/backgrounds_desk/backgroud4.jpg);
+    background: url(../../assets/backgrounds_desk/backgroud4.jpg);
     background-attachment: fixed;
     background-size: cover;
   }
