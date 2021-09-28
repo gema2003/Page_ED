@@ -333,21 +333,29 @@ nav {
 header {
   min-height: 76vh;
   background: url(../../assets/backgrounds_movil/bcgmovil-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #about .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #gallery .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 #contact .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -742,9 +750,10 @@ div i {
   .nav-toggle.open .toggle-bar::after {
     width: 50px;
   }
-  #about .internal-container img {
-    width: 150px;
-    height: 150px;
+  .circle2 img, 
+  .circle2 img {
+    width: 100px;
+    height: 100px;
   }
   #about .internal-container .circle1 {
     justify-content: flex-end;
@@ -871,9 +880,10 @@ footer p {
   .container h1 {
     font-size: 1.5rem;
   }
-  #about .internal-container img {
-    width: 50px;
-    height: 50px;
+  .circle1 img, 
+  .circle2 img {
+    width: 60px;
+    height: 60px;
   }
   .text {
     height: 80%;
@@ -916,23 +926,5 @@ footer p {
   }
   .check:checked ~ .openBtn {
     transform: rotate(180deg);
-  }
-  #about .internal-container {
-    background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  #gallery .internal-container {
-    background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  #contact .internal-container {
-    background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
   }
 }

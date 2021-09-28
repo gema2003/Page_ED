@@ -93,7 +93,6 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
-// calculate heights
 
 // ********** Gallery Menu Button ************
 document.querySelector('.more-button').addEventListener('click', function() {
