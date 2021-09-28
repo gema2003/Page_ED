@@ -334,7 +334,7 @@ header {
   min-height: 76vh;
   background: url(../../assets/backgrounds_movil/bcgmovil-1.jpg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 #about .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
