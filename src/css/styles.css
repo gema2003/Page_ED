@@ -397,6 +397,16 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.circle2 img, 
+.circle2 img {
+  width: 100px;
+  height: 10%;
+}
+.text {
+  height: 80%;
+  padding: 1rem;
+  overflow: auto;
+}
 /* Gallery Movil */
 #gallery .internal-container{
   display: grid;
@@ -750,19 +760,11 @@ div i {
   .nav-toggle.open .toggle-bar::after {
     width: 50px;
   }
-  .circle2 img, 
-  .circle2 img {
-    width: 100px;
-    height: 100px;
-  }
   #about .internal-container .circle1 {
     justify-content: flex-end;
   }
   #about .internal-container .circle2 {
     justify-content: flex-start;
-  }
-  .text {
-    padding: 1rem;
   }
   /* Gallery Desk */
   #gallery .internal-container{
@@ -883,11 +885,6 @@ footer p {
   .circle1 img, 
   .circle2 img {
     width: 60px;
-    height: 60px;
-  }
-  .text {
-    height: 80%;
-    overflow: auto;
   }
   #gallery .internal-container {
     padding: 0.5rem 0.375rem;
