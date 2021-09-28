@@ -163,11 +163,6 @@ p {
     width: 95vw;
   }
 }
-/*main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}*/
 /*
 =============== 
 Scroll
@@ -330,7 +325,7 @@ nav {
     margin-left: 1.5rem;
   }
 }
-header {
+.android header {
   min-height: 76vh;
   background: url(../../assets/backgrounds_movil/bcgmovil-1.jpg);
   background-position: center center;
@@ -338,25 +333,50 @@ header {
   background-attachment: fixed;
   background-size: cover;
 }
-#about .internal-container {
+.apple header {
+  min-height: 76vh;
+  background: url(../../assets/backgrounds_movil/bcgmovil-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.android #about .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-#gallery .internal-container {
+.apple #about .internal-container {
+  background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.android #gallery .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-#contact .internal-container {
+.apple #gallery .internal-container {
+  background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.android #contact .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+}
+.apple #contact .internal-container {
+  background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .banner {
@@ -644,7 +664,7 @@ div i {
   display: none;
 }
 
-@media screen and (min-width:  800px) {
+@media screen and (min-width: 800px) {
   header {
     background: url(../../assets/backgrounds_desk/backgroud1.jpg);
     background-attachment: fixed;
@@ -704,7 +724,7 @@ div i {
     max-width: 40rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   h2 {
     font-size: 2.5rem;
@@ -919,3 +939,4 @@ footer p {
     transform: rotate(180deg);
   }
 }
+

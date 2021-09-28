@@ -98,3 +98,41 @@ scrollLinks.forEach((link) => {
 document.querySelector('.more-button').addEventListener('click', function() {
   document.querySelector('.index-movil').classList.toggle('active');
 });
+
+// ********** Select Movil Divice ************
+const nua = navigator.userAgent;
+const el = document.documentElement;
+
+(userDeviceInfo = () => {
+  const mobile = {
+    android:()=> nua.match(/android/i),
+    ios:()=> nua.match(/iphone|ipad|ipod/i),
+    any:function() {
+      return this.android() || this.ios();
+    }
+  };
+
+  if (mobile.ios()) {
+    el.className += 'apple';
+
+  }else if (mobile.android()) {
+    el.className += 'android';
+  }
+
+})(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
