@@ -397,14 +397,9 @@ header {
   display: flex;
   justify-content: flex-end;
 }
-.circle2 img, 
-.circle2 img {
-  width: 100px;
-  height: 10%;
-}
 .text {
   height: 80%;
-  padding: 1rem;
+  padding: 0.5rem;
   overflow: auto;
 }
 /* Gallery Movil */
@@ -802,7 +797,6 @@ div i {
     display: none;
     /*outline: solid 1px #fff;*/
   }
-
 }
 /* sections and title */
 .title h2 {
@@ -823,10 +817,10 @@ div i {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem 0.375rem;
 }
 .internal-container {
   height: 100%;
-  padding: 2rem;
 }
 #about .internal-container p, h3 {
   color: var(--clr-white);
@@ -882,9 +876,9 @@ footer p {
   .container h1 {
     font-size: 1.5rem;
   }
-  .circle1 img, 
-  .circle2 img {
+  #about .internal-container img {
     width: 60px;
+    height: 60px;
   }
   #gallery .internal-container {
     padding: 0.5rem 0.375rem;
