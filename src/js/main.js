@@ -96,6 +96,6 @@ scrollLinks.forEach((link) => {
 // calculate heights
 
 // ********** Gallery Menu Button ************
-// document.querySelector('.more-button').addEventListener('click', function() {
-//   document.querySelector('.index-movil').classList.toggle('active');
-// });
+document.querySelector('.more-button').addEventListener('click', function() {
+  document.querySelector('.index-movil').classList.toggle('active');
+});

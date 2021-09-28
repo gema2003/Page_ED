@@ -339,17 +339,17 @@ header {
 #about .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-2.jpg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 #gallery .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-3.jpg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 #contact .internal-container {
   background: url(../../assets/backgrounds_movil/bcgmovil-4.jpg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 .banner {
   min-height: 76vh;
