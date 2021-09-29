@@ -26,19 +26,6 @@ navToggle.addEventListener("click", function () {
   // console.log(linksContainer.getBoundingClientRect());
 });
 
-// ********** Button Movil ************
-document.addEventListener('click', (e)=>{
-  if(e.target.matches('.nav-toggle')){
-      navToggle.classList.toggle('open');
-  }else if (e.target.matches('.scroll-link')){
-      navToggle.classList.toggle('open');
-  }else if (e.target.matches('.toggle-bar')) {
-      navToggle.classList.toggle('open');
-  }else {
-    // console.log('here not dub');
-  }
-});
-
 // ********** fixed navbar ************
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
@@ -94,10 +81,118 @@ scrollLinks.forEach((link) => {
   });
 });
 
-// ********** Gallery Menu Button ************
-document.querySelector('.more-button').addEventListener('click', function() {
-  document.querySelector('.index-movil').classList.toggle('active');
+// ********** Button Toggle ************
+document.addEventListener('click', (e)=>{
+  if(e.target.matches('.nav-toggle')){
+      navToggle.classList.toggle('open');
+  }else if (e.target.matches('.scroll-link')){
+      navToggle.classList.toggle('open');
+  }else if (e.target.matches('.toggle-bar')) {
+      navToggle.classList.toggle('open');
+  }else {
+    // console.log('here not dub');
+  }
 });
+
+// ********** Gallery Movil Button ************
+document.querySelector('.more-button').addEventListener('click', function() {
+  document.querySelector('.index-btn').classList.toggle('act');
+});
+
+// ********** Filter Gallery ************
+$(document).ready(function() {
+  $('.link').click(function() {
+    var valor = $(this).attr('data-name');
+    if(valor == 'all-designs') {
+      $('.filter').show('6000');
+    }else {
+      $('.filter').not('.' + valor).hide('6000');
+      $('.filter').filter('.' + valor).show('6000');
+    } 
+
+    $('ul.index-desk').on('click', 'li', function() {
+          $('li.active').removeClass('active');
+          $(this).addClass('active');
+    });
+    $('ul.index-movil').on('click', 'li', function() {
+          $('li.active').removeClass('active');
+          $(this).addClass('active');
+    });
+  });
+});
+
+// ********** Modal images gallery ************
+const gallery = document.querySelectorAll('.gallery .image');
+const imagesPrev = document.querySelector('.img-show');
+const container = document.querySelector('.modal-container');
+
+const prevImg = container.querySelector('img');
+
+const close = container.querySelector('.icon');
+
+const currentImg = container.querySelector('.current_img');
+const totalImg = container.querySelector('.total_img');
+const copyText = container.querySelector('.caption');
+const wdw = window;
+
+wdw.onload = () => { 
+
+    for (let i = 0; i < gallery.length; i++) {
+        totalImg.textContent = gallery.length 
+        let newIndex = i; 
+        let clickImgIndex = null;
+        
+        gallery[i].onclick = () => {
+            clickImgIndex = newIndex; 
+            
+            function preview() {
+                currentImg.textContent = newIndex + 1; 
+                let selectedImgUrl = gallery[newIndex].querySelector('img').src; 
+                imagesPrev.src = selectedImgUrl 
+                let textAlt = gallery[newIndex].querySelector('img').alt; 
+                copyText.innerHTML = textAlt; 
+            }
+            const prevBtn = container.querySelector('.prev');
+            const nextBtn = container.querySelector('.next');
+            if (newIndex == 0) {
+                prevBtn.style.display = 'none';
+            }
+            if (newIndex >= gallery.length - 1) {
+                nextBtn.style.display = 'none';
+            }
+            prevBtn.onclick = () => {
+                newIndex--;
+                if (newIndex == 0) {
+                    preview();
+                    prevBtn.style.display = 'none';
+                } else {
+                    preview();
+                    nextBtn.style.display = 'block';
+                }
+            }
+            nextBtn.onclick = () => {
+                newIndex++;
+                if (newIndex >= gallery.length - 1) {
+                    preview();
+                    nextBtn.style.display = 'none';
+                } else {
+                    preview();
+                    prevBtn.style.display = 'block';
+                }
+            }
+            preview(); 
+            container.classList.toggle('move');
+            imagesPrev.classList.toggle('show');
+            close.onclick = () => {
+                newIndex = clickImgIndex; 
+                prevBtn.style.display = 'block';
+                nextBtn.style.display = 'block';
+                container.classList.remove('move');
+                imagesPrev.classList.remove('show');
+            }
+        }
+    }
+}
 
 // ********** Select Movil Divice ************
 const nua = navigator.userAgent;
