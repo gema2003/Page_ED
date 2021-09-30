@@ -3,6 +3,28 @@
 // slice extracts a section of a string without modifying original string
 //offsetTop - A Number, representing the top position of the element, in pixels
 
+// ********** Select Movil Divice ************
+const nua = navigator.userAgent;
+const el = document.documentElement;
+
+(userDeviceInfo = () => {
+  const mobile = {
+    android:()=> nua.match(/android/i),
+    ios:()=> nua.match(/iphone|ipad|ipod/i),
+    any:function() {
+      return this.android() || this.ios();
+    }
+  };
+
+  if (mobile.ios()) {
+    el.className += 'apple';
+
+  }else if (mobile.android()) {
+    el.className += 'android';
+  }
+
+})(); 
+
 // ********** set date ************
 // select span
 const date = document.getElementById("date");
@@ -125,14 +147,10 @@ $(document).ready(function() {
 const gallery = document.querySelectorAll('.gallery .image');
 const imagesPrev = document.querySelector('.img-show');
 const container = document.querySelector('.modal-container');
-
-const prevImg = container.querySelector('img');
-
 const close = container.querySelector('.icon');
-
 const currentImg = container.querySelector('.current_img');
 const totalImg = container.querySelector('.total_img');
-const copyText = container.querySelector('.caption');
+const copyText = container.querySelector('.titles');
 const wdw = window;
 
 wdw.onload = () => { 
@@ -193,29 +211,6 @@ wdw.onload = () => {
         }
     }
 }
-
-// ********** Select Movil Divice ************
-const nua = navigator.userAgent;
-const el = document.documentElement;
-
-(userDeviceInfo = () => {
-  const mobile = {
-    android:()=> nua.match(/android/i),
-    ios:()=> nua.match(/iphone|ipad|ipod/i),
-    any:function() {
-      return this.android() || this.ios();
-    }
-  };
-
-  if (mobile.ios()) {
-    el.className += 'apple';
-
-  }else if (mobile.android()) {
-    el.className += 'android';
-  }
-
-})(); 
-
 
 
 
