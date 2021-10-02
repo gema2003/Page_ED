@@ -11,6 +11,7 @@
     rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
   	<!-- file styles -->
   	<link rel="stylesheet" href="./src/css/styles.css" />
+  	<link rel="stylesheet" href="./src/css/gradients.css" />
 </head>
 <body>
 
@@ -24,7 +25,7 @@
 				<div class="nav-header">
 					<img src="./assets/logos/logo.png" class="logo" alt="logo" />
 					<div class="name">
-						<h1>elfren danilo</h1>
+						<h1><span class="txt anim-text-flow">elfren danilo</span></h1>
 					</div>
 					<button class="nav-toggle">
 						<div class="toggle-bar"></div>
@@ -45,7 +46,7 @@
 		<div class="banner">
 			<div class="container">
 				<img src="./assets/logos/img_central.png" alt="img_central">
-				<h1>graphic designer</h1>
+				<h1><span class="txt anim-text-flow">graphic designer</span></h1>
 				<p>
             		“Graphic design isn' t what you see, but what you should make other people see”
             		<br/>(Edgar Degas)
@@ -266,7 +267,49 @@
           			</form>
           		</div>
           		<div class="social-desk">
-          			
+          			<div class="cards">
+          				<div class="card1">
+          					<div class="card" onclick="classList.toggle('expanded')">
+          						<img class="label1" src="./assets/logos/phone.png" alt="Phone">
+          						<svg class="chevron" fill="#20E2D7" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M6.293 13.293L7.707 14.707 12 10.414 16.293 14.707 17.707 13.293 12 7.586z"/></svg>
+          						<div class="text">
+          							<div class="content-text">
+          								<h3 class="title1" style="font-size: 1.5rem">phone number</h3>
+          								<div class="body-text">
+          									<a href="tel:+502 3298-5137">
+                    							<i class="fas fa-mobile" style="font-size: 3rem"></i>
+                  							</a>
+                  							<a href="whatsapp://send?&phone=+502 3298-5137&abid=+502 3298-5137">
+                    							<i class="fab fa-whatsapp-square" style="font-size: 3rem"></i>
+                  							</a>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+          				</div>
+          				<div class="card2">
+          					<div class="card" onclick="classList.toggle('expanded')">
+          						<img class="label2" src="./assets/logos/social.png" alt="Social">
+          						<svg class="chevron" fill="#20E2D7" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M6.293 13.293L7.707 14.707 12 10.414 16.293 14.707 17.707 13.293 12 7.586z"/></svg>
+          						<div class="text">
+          							<div class="content-text">
+          								<h3 class="title1" style="font-size: 1.5rem">social media</h3>
+          								<div class="body-text">
+          									<a href="#" target="">
+                   								<i class="fab fa-facebook-square" style="font-size: 3rem"></i>
+                  							</a>
+                  							<a href="#" target="">
+                    							<i class="fab fa-instagram-square" style="font-size: 3rem"></i>
+                  							</a>
+                  							<a href="#" target="">
+                    							<i class="fab fa-twitter-square" style="font-size: 3rem"></i>
+                  							</a>
+          								</div>
+          							</div>
+          						</div>
+          					</div>
+          				</div>
+          			</div>
           		</div>
         	</div>
       	</section>
